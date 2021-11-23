@@ -1,0 +1,108 @@
+.counter-box-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  .counter-box {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: 1921px) {
+      width: 137px;
+      height: 137px;
+      font-size: 56px;
+      line-height: 68px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .counter-box-b1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-top: 1px solid #03d5e8;
+      border-left: 1px solid #03d5e8;
+      box-sizing: border-box;
+      width: 13%;
+      height: 13%;
+    }
+    .counter-box-b2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-top: 1px solid #03d5e8;
+      border-right: 1px solid #03d5e8;
+      box-sizing: border-box;
+      width: 13%;
+      height: 13%;
+    }
+    .counter-box-b3 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-bottom: 1px solid #03d5e8;
+      border-right: 1px solid #03d5e8;
+      box-sizing: border-box;
+      width: 13%;
+      height: 13%;
+    }
+    .counter-box-b4 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 1px solid #03d5e8;
+      border-left: 1px solid #03d5e8;
+      box-sizing: border-box;
+      width: 13%;
+      height: 13%;
+    }
+    .counter-box-background {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 35, 84, 0.2) 0%, rgba(0, 4, 40, 0.2) 100%);
+    }
+  }
+
+  .counter-label {
+    margin-top: 12px;
+    font-family: Lintel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #f3f3f3;
+
+    @media (min-width: 1921px) {
+      font-size: 32px;
+      line-height: 40px;
+      margin-top: 26px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.market-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.blur-2 {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+.market-button {
+  background-color: #006ad0 !important;
+  border-radius: 12px !important;
+  padding: 16px 32px !important;
+}

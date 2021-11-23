@@ -1,0 +1,44 @@
+.plan-card {
+  //padding-top: 200%;
+  border-radius: 4px;
+  //position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .plan-card {
+    max-width: 40vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .plan-card {
+    max-width: 25vw;
+  }
+}
+
+.plan-one {
+  border-top-width: 6px;
+  border-top-style: solid;
+  height: 100%;
+}
+
+.ratio-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.plan-header {
+  padding-top: 50%;
+  position: relative;
+}
+
+.plan-button {
+  border-radius: 6px !important;
+  color: white;
+}

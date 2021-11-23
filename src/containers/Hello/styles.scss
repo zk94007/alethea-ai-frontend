@@ -1,0 +1,30 @@
+.character-container {
+  border-radius: 16px;
+  max-height: calc(100vh - 200px);
+}
+
+.gray-round {
+  background: #71727d !important;
+  border-radius: 1000px !important;
+}
+
+.minus-margin {
+  margin-top: -27px;
+}
+
+.side_avatar_container {
+  position: relative;
+  width: 100%;
+  padding-top: 133.33%;
+}
+
+.side_avatar_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 8px 16px rgba(18, 20, 39, 0.24), 0 4px 8px rgba(18, 20, 39, 0.16);
+  border-radius: 4px;
+  max-width: 365px;
+}

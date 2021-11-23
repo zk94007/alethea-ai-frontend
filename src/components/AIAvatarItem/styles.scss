@@ -1,0 +1,38 @@
+.ai-card-container {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16), 0 2px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  cursor: pointer;
+  height: calc(100% - 16px);
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
+}
+
+.ai-card-image {
+  height: 175px;
+  background-color: black;
+}
+
+.top-round-border {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.bottom-round-border {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+@supports (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%)) {
+  .ai-card-image {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  }
+}
+
+@media (max-width: 765px) {
+  .ai-card-image {
+    height: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+  }
+}

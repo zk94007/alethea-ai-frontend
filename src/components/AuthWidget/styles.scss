@@ -1,0 +1,25 @@
+.auth-background {
+
+
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .auth-background {
+    top: 56px;
+    position: fixed;
+    background: rgba(59, 65, 72, 1);
+    z-index: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .auth-background {
+    top: 0;
+    background: rgba(59, 65, 72, 0.88);
+    backdrop-filter: blur(8px);
+    position: absolute;
+  }
+}

@@ -1,0 +1,23 @@
+.dot-container {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.dot-class {
+  width: 4px;
+  height: 4px;
+  background-color: #ced0ea;
+  border-radius: 50%;
+}
+
+.active-dot-class {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #3f4cc9;
+}

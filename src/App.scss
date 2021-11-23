@@ -1,0 +1,28 @@
+#cookie-consent {
+  position: relative !important;
+  flex-flow: row !important;
+  height: 64px;
+  align-items: center;
+  width: 100%;
+}
+
+#cookie-consent-button {
+  background: linear-gradient(89.02deg, #6226d9 0.89%, #8c52ff 100%), #8c52ff;
+  border-radius: 50px !important;
+  height: auto !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Lintel';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/Lintel-Regular.ttf');
+}

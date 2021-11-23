@@ -1,0 +1,248 @@
+#recordingStatus {
+    display: inline-block;
+    background-color: #dd1c44;
+    margin-left: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    visibility: hidden;
+    -webkit-animation-name: redGlow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  .alice-pic {
+    width: 100%;
+    height: calc(93.5vh - 26px);
+  }
+
+  .MuiDialogContent-root {
+    .MuiButton-contained {
+      border-radius: 8px;
+    }
+  }
+  
+  .breathe-video {
+    outline: none;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &.blurred {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.16) 96.33%);
+      filter: blur(30px);
+    }
+  }
+  
+  .vader-listen {
+    margin-top: 20px;
+    color: #666;
+    text-align: center;
+  }
+  
+  .demo-page {
+    height: calc(100% - 64px);
+    border: 11px solid #4D4E54;
+    border-radius: 14px;
+  }
+  
+  .script-wrapper {
+    width: 100%;
+    max-height: 150px;
+    background: #1C1C1C;
+    backdrop-filter: blur(44.119px); 
+    border-bottom-right-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    // margin: 0 10px;
+    &.green {
+      color: white;
+    }
+    &.speech-color {
+      color: rgb(255, 166, 0);
+    }
+    #ResultText {
+      width: 100%;
+      min-height: 50px;
+      border-bottom-right-radius: 8px !important;
+      border-bottom-left-radius: 8px !important;
+      height: 100%;
+      // margin: 0;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 10px 14px;
+      word-break: break-word;
+      overflow: auto;
+      // text-align: center;
+    }
+    @media (max-width: 768px) {
+      width: calc(100% + 30px);
+      margin-left: -15px !important;
+    }
+  }
+  
+  .name-suggestions-wrapper {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 12px 0 36px 0;
+  
+    .MuiButton-containedPrimary {
+      background: rgba(164, 164, 164, 0.65);
+      backdrop-filter: blur(44.119px);
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 24px;
+      border-radius: 5px;
+  
+      &:hover {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(44.119px);
+      }
+    }
+  }
+  
+  .name-suggestions-input {
+    input {
+      background: #000;
+      opacity: 0.2;
+      border-radius: 8px;
+    }
+  
+    > div {
+      border-radius: 8px;
+    }
+  
+    fieldset {
+      border: none;
+    }
+  }
+  
+  .okay-button {
+    background: #fff !important;
+    color: #17A289 !important;
+    border-radius: 8px !important;
+  }
+  
+  .meeting-button {
+    border-radius: 8px !important;
+    min-width: 150px !important;
+    white-space: nowrap;
+  
+    &.secondry-meeting-button {
+      background: #ffffff !important;
+      color: #fc5d5b !important;
+    }
+  }
+  
+  .back-button {
+    border-radius: 8px !important;
+    background:  rgba(255, 255, 255, 0.3) !important;
+    color: #fff !important;
+  }
+  
+  .vader-footer {
+    background-color: #4D4E54;
+    border-radius: 0 0 10px 10px;
+    padding: 0 24px 11px;
+    border-top: none !important;
+    border-right: 1px solid #4D4E54 !important;
+    border-left: 1px solid #4D4E54 !important;
+    border-bottom: 1px solid #4D4E54 !important;
+   
+    div, button {
+      position: relative;
+      z-index: 1301;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .demo-page {
+      .script-wrapper {
+        height: 120px;
+        #ResultText {
+          font-size: 18px;
+          line-height: 24px;
+          padding: 8px;
+        }
+      }
+    }
+  }
+  .muted-btn{
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+    min-height: 50px !important;
+    border-radius: 50%;
+    background: #fc5d5b;
+    img{
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+  .unmuted-btn{
+    width: 50px !important;
+    min-width: 50px !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    border-radius: 50%;
+    background: rgba(164, 164, 164, 0.2);
+    backdrop-filter: blur(44.119px);
+    img{
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+  .MuiDialog-root{
+    padding: 3rem 0 80px 3rem !important;
+    .MuiPaper-root{
+      .separator{
+        position: relative;
+        border-bottom: none;
+        &:before{
+          content: '';
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #ffffff;
+          width: 50px;
+          height: 1px;
+          bottom: 0;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0;
+          background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #FC5D5B 0%, #5865A8 21.87%, #206A7C 54.69%, #23D1BE 100%);
+          opacity: 0.2;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+        }
+      }
+      .MuiInputBase-root{
+        background: rgba($color: #000000, $alpha: 0.2);
+        border-radius: 8px;
+      }
+      .MuiInputBase-input{
+        background: transparent;
+        opacity: 0.8;
+        color: #ffffff;
+      }
+    }
+  }
+  .MuiDialog-container{
+    width: calc(100% - 3rem);
+  }
+
+  @media (max-width: 1024px) {
+  .MuiDialog-root {
+    padding: 0px !important;
+    .MuiDialog-container {
+      width: 100%;
+  }
+  }
+}

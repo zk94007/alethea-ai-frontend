@@ -1,0 +1,27 @@
+.resource-item-container {
+  padding-top: 68%;
+}
+
+.resource-card-container {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16), 0 2px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.resource-card-image {
+  height: 175px;
+  border-radius: 8px;
+}
+
+@supports (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%)) {
+  .resource-card-image {
+    border-radius: 8px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  }
+}
+
+@media (max-width: 765px) {
+  .resource-card-image {
+    height: 75px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+  }
+}

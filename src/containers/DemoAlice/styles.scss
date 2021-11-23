@@ -1,0 +1,376 @@
+.alice-background {
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+.demo-wrapper-alice {
+  // height: calc(100vh - 144px) !important;
+  // border: 11px solid #4d4e54;
+  border: none !important;
+  border-radius: 14px;
+  @media (max-width: 1024px){
+    height: 94vh !important;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1rem 0 !important;
+    .row{
+      height: 100%;
+    }
+    video{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.desktop-ai-speech{
+  position: absolute;
+  bottom: 20px;
+  z-index: 1301;
+  left: 0;
+  right: 0;
+  width: auto;
+  max-width: 90%;
+  height: auto;
+  margin: 20px auto 0 !important;
+  min-height: 50px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 10px;
+  word-break: break-word;
+  overflow: auto;
+  text-align: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1024px){
+    display: none !important;
+  }
+}
+.dsm-none{
+  @media (max-width: 1024px){
+    display: none;
+  }
+}
+.video-wrapper-demo-alice {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  @media (max-width: 1024px){
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+  .ai-video {
+    width: 100%;
+    padding-top: 56.25%;
+    margin-bottom: 16px;
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width: 1024px){
+      padding-top: 0;
+      height: calc(100% - 144px);
+      video{
+        height: calc(100% - 128px);
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.video-cam-wrapper-demo {
+  position: relative;
+  max-height: 559px;
+    max-width: 946px;
+  margin: auto;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  video {
+    width: 100%;
+    max-height: 559px;
+    max-width: 946px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .ai-video {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: auto;
+      max-width: 900px;
+    }
+    @media (max-width: 1024px){
+      padding-top: 0;
+      height: 100%;
+      video{
+        height: calc(100% - 190px);
+        object-fit: cover;
+      }
+    }
+  }
+}
+#videoalice2 {
+  background-image: url('../../assets/video_player/imgs/webcam.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 559px;
+  max-width: 946px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  @media (max-width: 1024px){
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    top: 40px;
+    left: 40px;
+    padding: 0 !important;
+    z-index: 1302 !important;
+    margin: 0;
+    video{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+.alethea-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#videoalice3 {
+  background-image: url('../../assets/video_player/imgs/webcam.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 500px;
+  max-height: 318px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin: 0;
+  @media (max-width: 1024px){
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    top: 40px;
+    left: 40px;
+    padding: 0 !important;
+    z-index: 1302 !important;
+    video{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+.clipboard-icon {
+  cursor: pointer;
+  color: #fff;
+}
+
+.MuiDialog-root{
+  padding: 3rem 0 80px 3rem !important;
+  .MuiPaper-root{
+    color: #FFFFFF;
+    padding: 30px;
+    min-width: 600px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #3B4148;
+    border-radius: 10px;
+    .separator{
+      position: relative;
+      border-bottom: none;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ffffff;
+        width: 50px;
+        height: 1px;
+        bottom: 0;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #FC5D5B 0%, #5865A8 21.87%, #206A7C 54.69%, #23D1BE 100%);
+        opacity: 0.2;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+      }
+    }
+    .MuiInputBase-root{
+      background: rgba($color: #000000, $alpha: 0.2);
+      border-radius: 8px;
+    }
+    .MuiInputBase-input{
+      background: transparent;
+      opacity: 0.8;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .MuiPaper-root{
+    min-width: auto !important;
+    max-width: 90% !important;
+    padding: 20px !important;
+    .font-size-34{
+      font-size: 24px !important;
+    }
+    .name-suggestions-wrapper{
+      margin-bottom: 20px;
+    }
+  }
+  .name-suggestions-wrapper .MuiButton-containedPrimary {
+    display: block;
+    white-space: nowrap;
+    width: auto !important;
+    min-width: 102px;
+    flex: 0 0 auto;
+  }
+
+  .name-suggestions-wrapper {
+    justify-content: flex-start !important;
+  }
+}
+
+.screen-recorder {
+  margin-left: auto;
+}
+.reply-text {
+  position: fixed;
+  width: calc(100% - 80px);
+  bottom: 64px;
+  margin: 0 auto 0;
+  font-size: 24px;
+  line-height: 26px;
+  word-break: break-word;
+  text-align: center;
+}
+.rec-btn {
+  border: 2px solid #eb5757;
+  color: #eb5757;
+  padding: 1px 1px;
+  cursor: pointer;
+}
+.recording-status {
+  margin-bottom: 0;
+}
+.name-suggestions-wrapper {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin: 12px 0 36px 0;
+
+  .MuiButton-containedPrimary {
+    background: rgba(164, 164, 164, 0.65);
+    backdrop-filter: blur(44.119px);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    border-radius: 5px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(44.119px);
+    }
+  }
+}
+
+.tool-btn {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  border-radius: 50%;
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  &.muted {
+    background: #fc5d5b;
+  }
+  &.unmuted {
+    background: rgba(164, 164, 164, 0.2);
+    backdrop-filter: blur(44.119px);
+  }
+}
+.MuiBackdrop-root{
+  backdrop-filter: blur(44.119px);
+}
+@media (max-width: 576px){
+  .MuiBackdrop-root {
+      top: 0px !important;
+  }
+}
+@media (max-width: 1024px){
+  .MuiDialog-root{
+    padding: 0 !important;
+  }
+  .MuiDialog-container{
+    width: 100%;
+  }
+}
+@media (max-width: 1024px){
+  .cam-video-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    justify-content: flex-end !important;
+    height: 90vh;
+    z-index: 99999;
+    background: linear-gradient(180deg, transparent 70%, #000);
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .alethea-logo {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    img{
+      width: 65px;
+      height: 65px;
+      filter: grayscale(1);
+      opacity: 0.2;
+    }
+  }
+  .toolbar-footer {
+    margin-bottom: 20px;
+  }
+}

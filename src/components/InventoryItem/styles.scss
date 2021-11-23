@@ -1,0 +1,86 @@
+.avatar-sticker {
+  color: #ffd643;
+  text-shadow: 0 0 3px #ffd645;
+  transform: rotate(-15deg);
+  font-family: Caveat, cursive;
+  line-height: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  width: 48px;
+  text-align: center;
+}
+
+.item-header {
+  background-color: #1f103b;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.active-item-header {
+  background: linear-gradient(89.02deg, #6226d9 0.89%, #8c52ff 100%), #1f103b;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.inventory-image {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.rounded-border {
+  border-radius: 8px;
+}
+
+.item-container {
+  box-shadow: 0px 8px 16px rgba(18, 20, 39, 0.24), 0px 4px 8px rgba(18, 20, 39, 0.16);
+  border-radius: 4px;
+}
+
+.item-inActive {
+  opacity: 0.5;
+}
+
+.item-active {
+  opacity: 1;
+}
+
+.item-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.inventory-container {
+  padding-top: 111%;
+}
+
+.disable-container {
+  opacity: 50% !important;
+}
+
+.lock-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(18, 20, 39, 0.75);
+}
+
+.trans-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(18, 20, 39, 0.5);
+}

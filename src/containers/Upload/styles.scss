@@ -1,0 +1,19 @@
+.upload-background {
+  background-color: #fafaff;
+}
+
+.splitter {
+  border-right: 1px solid #3b4148;
+  box-shadow: 8px 0 24px rgba(0, 0, 0, 0.16), 4px 0 16px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.image-dropzone {
+  /* #FFFFFF */
+
+  background: #ffffff;
+  /* #CED0EA */
+
+  border: 1px dashed #ced0ea;
+  border-radius: 8px;
+}

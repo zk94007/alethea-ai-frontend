@@ -1,0 +1,10 @@
+@media (max-width: 765px) {
+  .mobile-vw-100 {
+    width: 100vw;
+  }
+
+  .page-view {
+    max-width: calc(var(--vh, 1vh) * 100 - 280px);
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+#recordingStatus {
+  display: inline-block;
+  background-color: #dd1c44;
+  margin-left: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  visibility: hidden;
+  -webkit-animation-name: redGlow;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
